@@ -3,3 +3,34 @@
     Author: Craig Bennett
     Version: 1.0.0
 */
+
+/**
+* Remove the margin in all browsers.
+*/
+body {
+    margin: 0;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+.hero-image {
+    grid-area: 1 / 1 / 2 / 2;
+    max-width: 100%; 
+    height: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-image {
+        width: auto; 
+        height: 16vh;
+        object-fit: cover;
+    }
+}
+

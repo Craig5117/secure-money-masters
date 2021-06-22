@@ -16,9 +16,5 @@
                 <nav>
                 </nav>              
             </div>
-            <div class="hero">
-                <div class="hero-image" style="background-image: url(<?php echo get_theme_file_uri('/images/cropped-SMM-Banner-2.png') ?>)">
-                </div>
-            </div>
         </header>
    
