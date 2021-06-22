@@ -4,13 +4,32 @@
     Version: 1.0.0
 */
 
-/**
-* Remove the margin in all browsers.
-*/
+
+/* Remove the margin in all browsers */
 body {
     margin: 0;
 }
 
+/* header styles */
+header {
+    max-width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 2em;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-options-container {
+    display: flex;
+}
+
+/* hero styles */
 .hero {
     display: grid;
     grid-template-columns: 1fr;
@@ -27,6 +46,10 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    .header-container {
+        flex-direction: column;
+    }
+    
     .hero-image {
         width: auto; 
         height: 16vh;
