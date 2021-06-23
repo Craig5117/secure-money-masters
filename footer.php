@@ -1,5 +1,5 @@
         <footer>
-        I AM FOOTER
+        FOOTER
         </footer>
         <?php wp_footer(); ?>
     </body>

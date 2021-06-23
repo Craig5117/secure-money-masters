@@ -8,13 +8,35 @@
     <body <?php body_class()?>>
         <header>
             <div class="header-container">
-                <h1>
-                    <a href="<?php echo site_url() ?>" style="text-decoration: none; color: #165d00">
-                        Secure Money Masters
-                    </a>
-                </h1>
+                <div class="top-bar">
+                    <h1>
+                        <a href="<?php echo site_url() ?>">
+                            Secure Money Masters
+                        </a>
+                    </h1>
+                    <svg class="menu-icon" viewBox="0 0 25.400019 25.4">
+                        <rect class="menu-icon-bar" style="fill-rule:evenodd;stroke-width:0.0546003" id="rect144"
+                            width="18.836819"
+                            height="1.9205832"
+                            x="3.2815907"
+                            y="5.0127468"
+                            ry="0.61458665" />
+                        <rect class="menu-icon-bar" style="fill-rule:evenodd;stroke-width:0.0546003" id="rect144-9"
+                            width="18.836819"
+                            height="1.9205832"
+                            x="3.2815907"
+                            y="10.835579"
+                            ry="0.61458665" />
+                        <rect class="menu-icon-bar" style="fill-rule:evenodd;stroke-width:0.0546003" id="rect144-8"
+                            width="18.836819"
+                            height="1.9205832"
+                            x="3.2815907"
+                            y="16.658411"
+                            ry="0.61458665" />
+                    </svg>
+                </div>
                 <nav>
-                    <div class="nav-options-container">
+                    <div class="header-menu-container">
                         <?php wp_nav_menu(array(
                             'theme_location' => 'headerMenuLocation',
                             'menu_class' => 'header-menu'
