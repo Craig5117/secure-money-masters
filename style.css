@@ -21,13 +21,29 @@
 /* Remove the margin in all browsers */
 body {
     font-family: 'Arsenal';
+    background-color: var(--content-area);
+}
+
+/* General Styles */
+h2 {
+    color: var(--content-area);
+    background-color: var(--main-light);
+    position: relative;
+    z-index: -1;
+    padding: .75em 0 .5em 1em;
+    font-size: 1.75em;
+    border-bottom: solid 30px var(--accent-theme); 
+    border-image: linear-gradient(to right, var(--accent-theme), var(--accent-light)) 30;
+    box-shadow: 0 3px 6px -3px black, inset 0 -3px 6px -3px black;
+    text-shadow: 3px 1px var(--main-theme);
 }
 
 /**
 * header styles */
 header {
     max-width: 100%;
-    box-shadow: 0 3px 6px -3px gray;
+    box-shadow: 0 3px 6px -3px black;
+    background-color: white;
 }
 
 /* aligns and positions the header items */
@@ -39,17 +55,18 @@ header {
 }
 
 .top-bar {
+    height: 70%;
     border-bottom: solid 10px var(--accent-theme);
     border-image: linear-gradient( to left, var(--accent-theme),  rgb(255, 244, 183)) 30;
     transform: skew(-60deg);
 }
 
 header h1 {
-    margin: 0;
     padding-left: .5em;
     padding-right: 1.5em;
     transform: skew(60deg);
     font-family: 'Times New Roman', Times, serif;
+    font-size: 2.2em;
 }
 
 header h1 a {
@@ -63,6 +80,7 @@ header h1:hover a {
     text-shadow: 2px 2px var(--accent-light);
 }
 
+/* Nav Styles */
 .menu-icon {
     display: none;
     height: 2.5em;
@@ -116,6 +134,7 @@ header nav ul li:hover a{
 
 .current-menu-item a {
     color: var(--accent-theme);
+    text-shadow: 1px 1px black;
 }
 
 .header-menu {
@@ -125,7 +144,7 @@ header nav ul li:hover a{
     height: 100%;
 }
 
-/* hero styles */
+/* Hero Styles */
 .hero {
     display: grid;
     grid-template-columns: 1fr;
@@ -143,10 +162,13 @@ header nav ul li:hover a{
     max-width: 100%; 
     height: auto;
     margin-bottom: -1px;
-    
+    position: relative;
+    z-index: -1;
 }
 
 @media screen and (max-width: 767px) {
+    /**
+    * Header Mobile Styles */
     .header-container {
         flex-direction: column;
         align-items: flex-start;
@@ -158,25 +180,40 @@ header nav ul li:hover a{
         justify-content: space-between;
         align-items: center;
         transform: skew(0deg);
-        width: 100%
+        width: 100%;
     }
     
-    .menu-icon {
-        display: inline;
-        padding: 5px 7px 0 7px;
+    header h1 {
+        font-size: 1.6em;
+        padding-left: 0.3em;
+        padding-right: 0;
+        transform: skew(0deg);
+    }
+
+    /* Nav Menu Mobile Styles */    
+    .top-bar button {
+        border: none;
         border-left: solid 2px var(--main-theme);
+        padding: 5px 7px 0 7px;
+        background-color: white;
+    }
+
+    header nav {
+        width: 100%;
+    }
+    .menu-icon {
+        display: inline;        
     }
     
     .header-menu {
         display: none;
     }
 
-    header h1 {
-        font-size: 1.6em;
-        padding-left: 0.3em;
-        transform: skew(0deg);
+    .menu-item { 
+        border: solid 1px var(--main-light)
     }
 
+    /* Hero Mobile Styles */
     .hero-image {
         width: auto; 
         height: 16vh;

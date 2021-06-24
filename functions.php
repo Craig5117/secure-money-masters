@@ -1,5 +1,6 @@
 <?php 
     function smm_files() {
+        wp_enqueue_script('header-js', get_theme_file_uri('/js/header.js'), NULL, '1.0.0', true);
         wp_enqueue_style('main-styles', get_stylesheet_uri());
         wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400&display=swap');
     }
