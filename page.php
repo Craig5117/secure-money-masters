@@ -4,12 +4,12 @@ get_header();
 
 while ( have_posts() ) {
     the_post(); ?>
-    <div>
+    <div class="page-title-container">
       <h2 ><?php the_title() ?></h2>
     </div>  
   
     
-    <div>
+    <div class="content">
         <?php the_content() ?>
     </div>
 
