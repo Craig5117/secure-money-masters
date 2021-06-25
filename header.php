@@ -11,7 +11,7 @@
                 <div class="top-bar">
                     <h1>
                         <a href="<?php echo site_url() ?>">
-                            Secure Money Masters
+                            SecureMoneyMasters
                         </a>
                     </h1>
                     <button onclick="toggleNav()">                    

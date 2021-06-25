@@ -19,9 +19,18 @@
   }
 
 /* Remove the margin in all browsers */
+html, body {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
 body {
     font-family: 'Arsenal';
     background-color: var(--content-area);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* General Styles */
@@ -42,6 +51,7 @@ h2 {
 * header styles */
 header {
     max-width: 100%;
+    width: 100%;
     box-shadow: 0 3px 6px -3px black;
     background-color: white;
 }
@@ -59,6 +69,7 @@ header {
     border-bottom: solid 10px var(--accent-theme);
     border-image: linear-gradient( to left, var(--accent-theme),  rgb(255, 244, 183)) 30;
     transform: skew(-60deg);
+    max-width: 100%;
 }
 
 header h1 {
@@ -81,8 +92,11 @@ header h1:hover a {
 }
 
 /* Nav Styles */
-.menu-icon {
+.top-bar button {
     display: none;
+}
+
+.menu-icon {
     height: 2.5em;
     width: 2.5em;
 }
@@ -144,7 +158,8 @@ header nav ul li:hover a{
     height: 100%;
 }
 
-/* Hero Styles */
+/** 
+* Hero Styles */
 .hero {
     display: grid;
     grid-template-columns: 1fr;
@@ -166,9 +181,52 @@ header nav ul li:hover a{
     z-index: -1;
 }
 
-@media screen and (max-width: 767px) {
-    /**
-    * Header Mobile Styles */
+.content {
+    flex: 1 0 auto;
+    
+}
+
+/** 
+* Footer Styles */
+
+footer {
+    background-color: var(--main-light);
+    border-top: solid 30px var(--accent-theme); 
+    border-image: linear-gradient(to left, var(--accent-theme), var(--accent-light)) 30;
+    box-shadow: 0 -3px 6px -3px black, inset 0 3px 6px -3px black;
+    background-image: linear-gradient(to bottom, var(--main-light) 0%, var(--main-theme) 130%);
+    /* background-image: -o-linear-gradient(bottom, var(--main-theme) 0%, var(--main-light) 100%);
+    background-image: -moz-linear-gradient(bottom, var(--main-theme) 0%, var(--main-light) 100%);
+    background-image: -webkit-linear-gradient(bottom, var(--main-theme) 0%, var(--main-light) 100%);
+    background-image: -ms-linear-gradient(bottom, var(--main-theme) 0%, var(--main-light) 100%); */
+    width: 100%;
+    color: white;
+    
+    flex-shrink: 0;
+}
+
+footer h3 {
+    border-bottom: dotted 2px black;
+    margin-bottom: .75em;
+    padding-bottom: .25em;
+}
+
+footer a {
+    color: black;
+}
+
+#footer-sidebar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+    
+#footer-sidebar1, #footer-sidebar2, #footer-sidebar3 {
+    padding: 1em;
+}
+
+
+
+@media screen and (max-width: 1024px) {
     .header-container {
         flex-direction: column;
         align-items: flex-start;
@@ -176,11 +234,27 @@ header nav ul li:hover a{
     }
 
     .top-bar {
+        transform: skew(0deg);
+        display: flex;
+        width: 100%;
+    }
+
+    header h1 {
+        transform: skew(0deg);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /**
+    * Header Mobile Styles */
+
+    .top-bar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         transform: skew(0deg);
         width: 100%;
+        height: 100%;
     }
     
     header h1 {
@@ -218,6 +292,11 @@ header nav ul li:hover a{
         width: auto; 
         height: 16vh;
         object-fit: cover;
+    }
+
+    #footer-sidebar {
+        display: flex;
+        flex-direction: column;
     }
 }
 
