@@ -5,13 +5,13 @@ get_header();
 while ( have_posts() ) {
     the_post(); ?>
     <div class="page-title-container">
-      <h2 ><?php the_title() ?></h2>
+      <h2 class="page-title"><?php the_title() ?></h2>
     </div>  
   
     
-    <div class="content">
+    <main class="content">
         <?php the_content() ?>
-    </div>
+</main>
 
   </div> 
 <?php }

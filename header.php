@@ -14,7 +14,7 @@
                             SecureMoneyMasters
                         </a>
                     </h1>
-                    <button onclick="toggleNav()">                    
+                    <button onclick="toggleNav()" aria-label="Menu Toggle">                    
                         <svg class="menu-icon" viewBox="0 0 25.400019 25.4">
                             <rect class="menu-icon-bar" style="fill-rule:evenodd;stroke-width:0.0546003" id="rect144"
                                 width="18.836819"

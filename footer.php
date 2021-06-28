@@ -22,6 +22,10 @@
         ?>
                 </div>
             </div>
+            <div class="bottom-el">
+                <span>&copy 2021 SecureMoneyMasters</span><span><a href="<?php echo site_url('/privacy-policy') 
+                            ?>">Privacy Policy</a></span>
+            </div>
         </footer>
 <?php wp_footer(); ?>
     </body>
