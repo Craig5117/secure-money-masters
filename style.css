@@ -188,6 +188,7 @@ header nav ul li:hover a{
 .content {
     flex: 1 0 auto;
     padding: 2em 5em;
+    width: 100%;
 }
 
 .content .headline {
@@ -224,38 +225,45 @@ main .testimonial-quote {
 
 /* About Us Styles */
 
-.advisor-profile {
-    margin-bottom: 2em;
+.wp-block-plugin-profile-block {
+    width: 100%;
 }
 
-.advisor-profile .wp-block-group__inner-container {
+.profile-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-header {
+    font-size: 1.5em;
+    margin-bottom: .75em;
+    
+    border-bottom:  solid 4px var(--accent-theme);
+    border-image: linear-gradient( to right, var(--accent-theme),  rgb(255, 244, 183)) 30;
+}
+
+.profile-main {
+    padding-left: 2em;
+    padding-top: 1em;
+}
+
+.profile-main .wp-block-group__inner-container {
     display: flex;
     justify-content: start;
 }
 
 .profile-details .wp-block-group__inner-container {
     display: block;
-}
-
-.profile-details {
     margin-left: 2em;
     padding-top: 1em;
 }
 
-.profile-details h4 {
-    font-size: 1.5em;
-    margin-bottom: .75em;
-    width: 15em;
-    border-bottom:  solid 4px var(--accent-theme);
-    border-image: linear-gradient( to right, var(--accent-theme),  rgb(255, 244, 183)) 30;
-}
-
-.profile-details ul {
+.profile-details .profile-list {
     list-style: none;
     margin-bottom: .75em;
 }
 
-.profile-details ul li {
+.profile-details .profile-list li {
     font-weight: bold;
 }
 
@@ -394,12 +402,17 @@ footer .bottom-el {
         font-size: 1.15em;
     }
 
-    .advisor-profile .wp-block-group__inner-container {
+    .profile-main {
+        padding: 0;
+    }
+
+    .profile-main .wp-block-group__inner-container {
         flex-direction: column;
     }
 
-    .profile-details h4 {
-        width: 100%;
+    .profile-details .wp-block-group__inner-container {
+        margin-left: 0;
+        padding-top: 0;
     }
 
     /* Footer Mobile Styles */
