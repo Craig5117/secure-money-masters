@@ -202,11 +202,22 @@ header nav ul li:hover a{
     font-size: 1.75em;
     color: var(--main-theme);
     margin-bottom: 1em;
+    text-shadow: 1px 1px black;
+    border-bottom: solid 4px var(--main-theme);
+    /* border-image: linear-gradient( to top, var(--accent-light),  var(--main-theme)) 30; */
+    width: 40%;
+    padding-left: 1em;
+    box-shadow: 0 4px 2px -2px grey;
 }
 
 .content p {
     font-size: 1.1em;
     margin-bottom: 1em;
+}
+
+.content-text {
+    padding: 0 2em;
+    width: 90%;
 }
 
 main .famous-quote {
@@ -223,16 +234,26 @@ main .testimonial-quote {
     font-style: italic;
 }
 
+.content-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.content-photo img {
+    object-fit: contain;
+}
+
 /* About Us Styles */
 
 .wp-block-plugin-profile-block {
     width: 100%;
 }
 
-.profile-container {
+/* .profile-container {
     display: flex;
     justify-content: center;
-}
+    width: 100%;
+} */
 
 .profile-header {
     font-size: 1.5em;
@@ -252,6 +273,10 @@ main .testimonial-quote {
     justify-content: start;
 }
 
+.profile-details {
+    width: 75%;
+}
+
 .profile-details .wp-block-group__inner-container {
     display: block;
     margin-left: 2em;
@@ -267,6 +292,9 @@ main .testimonial-quote {
     font-weight: bold;
 }
 
+.phone-link-container {
+    font-weight: bold;
+}
 
 /** 
 * Footer Styles */
@@ -327,6 +355,11 @@ footer .bottom-el {
     header h1 {
         transform: skew(0deg);
         
+    }
+
+    .content-text {
+        width: 100%;
+        padding-right: 1em;
     }
 }
 
@@ -390,6 +423,16 @@ footer .bottom-el {
         padding: 2em 2em;
     }
     
+    .content h3 {
+        width: 100%;
+        padding-left: .3em;
+    }
+
+    .content-text {
+        padding-right: 0;
+        padding-left: .5em;
+    }
+
     main .headline {
         font-size: 1.5em;
     }
@@ -408,6 +451,10 @@ footer .bottom-el {
 
     .profile-main .wp-block-group__inner-container {
         flex-direction: column;
+    }
+
+    .profile-details {
+        width: 100%;
     }
 
     .profile-details .wp-block-group__inner-container {
