@@ -292,8 +292,57 @@ main .testimonial-quote {
     font-weight: bold;
 }
 
+/* Contact Style */
+
 .phone-link-container {
     font-weight: bold;
+}
+
+.phone-link-message {
+    
+    color: var(--main-theme);
+}
+
+.phone-link {
+    text-decoration: none;
+    color: var(--main-light);
+}
+
+.email-link {
+    text-decoration: none;
+    color: var(--main-light);
+    /* font-weight: bold; */
+}
+
+div.wpforms-container-full {
+    border: solid 2px var(--main-theme);
+    box-shadow: inset 0px 0px 10px 1px var(--main-theme);
+}
+
+div.wpforms-container-full, div.wpforms-container-full .wpforms-form {
+    background-color: var(--main-light);
+    color: white;
+    padding: 1em;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-required-label {
+    color: black;
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"] {
+    border-radius: 5px;
+    background-color: var(--main-theme);
+    color: white;
+    border-color: var(--main-theme);
+    box-shadow: inset 0px 0px 10px 1px #103f02, 0px 0px 5px 1px var(--main-theme);
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
+    color: var(--main-theme);
+} 
+
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+    resize: none;
 }
 
 /** 
