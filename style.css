@@ -189,6 +189,7 @@ header nav ul li:hover a{
     flex: 1 0 auto;
     padding: 2em 5em;
     width: 100%;
+  
 }
 
 .content .headline {
@@ -306,12 +307,13 @@ main .testimonial-quote {
 .phone-link {
     text-decoration: none;
     color: var(--main-light);
+    height: 100%;
+    width: 100%;
 }
 
 .email-link {
     text-decoration: none;
     color: var(--main-light);
-    /* font-weight: bold; */
 }
 
 div.wpforms-container-full {
@@ -343,6 +345,38 @@ div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
 
 div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     resize: none;
+}
+
+/* Directions Styles */
+.page-id-30 .content {
+    background-color: var(--main-theme);
+    box-shadow: inset 0 3px 6px -3px black;
+}
+
+.page-id-30 .content p {
+    color: white;
+    margin-bottom: 2em;
+}
+
+.map-container {
+    display: flex;
+    margin-top: 2em;
+}
+
+.directions-link-container {
+    padding: .5em 1em;
+    background-color: var(--accent-light);
+    background: linear-gradient(to bottom right, var(--accent-theme), var(--accent-light));
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.directions-link {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 /** 
