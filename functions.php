@@ -43,4 +43,18 @@
             ) );
     }
     add_action( 'widgets_init', 'smm_widgets_init' );
-?>
+
+    function smm_post_thumbnails() {
+        add_theme_support( 'post-thumbnails' );
+    }
+    add_action( 'after_setup_theme', 'smm_post_thumbnails' );
+
+//Page Slug Body Class
+function add_slug_body_class( $classes ) {
+    global $post;
+    if ( isset( $post ) ) {
+    $classes[] = $post->post_type . '-' . $post->post_name;
+    }
+    return $classes;
+    }
+    add_filter( 'body_class', 'add_slug_body_class' );
