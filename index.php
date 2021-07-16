@@ -39,7 +39,6 @@ while (have_posts()) {
 ?>
 </main>
 <div class="pagination-container"><?php echo paginate_links(); ?></div>
-  </div>
 <?php get_footer();
 ?>
 
