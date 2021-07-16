@@ -381,26 +381,26 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
 }
 
 /* Blog Styles */
-.blog .content {
+.blog .content, .category .content, .author .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2em;
     grid-row-gap: 2em;
 }
 
-.blog .content h3 {
+.blog .content h3, .category .content h3, .author .content h3 {
     width: 100%;
     text-shadow: none;
     min-height: 3em;
     font-size: 2em;
 }
 
-.blog .content .post-link {
+.blog .content .post-link, .category .content .post-link, .author .content .post-link {
     text-decoration: none;
     color: black;
 }
 
-.blog .post-item {
+.post-item {
     padding: 1em 2em;
     background: white;
     box-shadow: 0 3px 8px #888;
@@ -408,11 +408,11 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     border-top: solid 15px var(--main-theme)
 }
 
-.blog .post-item .post-image-thumb-container, .single .post-image-container {
+.post-item .post-image-thumb-container, .single .post-image-container {
     display: flex;
 }
 
-.blog .post-item .read-btn {
+.post-item .read-btn {
     background-color: black;
     border-radius: 25px;
     display: inline-flex;
@@ -423,7 +423,7 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     margin-left: 1em;
 }
 
-.blog .post-item .read-btn a {
+.post-item .read-btn a {
     color: white;
     text-decoration: none;
     padding: .3em 1em;
@@ -431,7 +431,7 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     width: 100%;
 }
 
-.blog .pagination-container {
+.pagination-container {
     margin-left: 6em;
     margin-bottom: 2em;
 }
@@ -469,12 +469,12 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     padding-left: .5em;
 }
 
-.page-podcasts .content {
+.post-type-archive-podcast .content {
     display: flex;
     justify-content: center;
 }
 
-.page-podcasts .podcasts-container {
+.post-type-archive-podcast .podcasts-container {
     border-top: solid 30px var(--main-theme);
     border-left: solid 3px var(--main-theme);
     border-right: solid 3px var(--main-theme);
@@ -485,7 +485,7 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     box-shadow: 5px 0 10px -5px black, 0 5px 10px -5px black, -5px 0 10px -5px black;
 }
 
-.page-podcasts .content h3 {
+.post-type-archive-podcast .content h3 {
     color: white;
     text-shadow: none;
     background-color: var(--main-light);
@@ -495,11 +495,11 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     font-size: 1.5em;
 }
 
-.page-podcasts .single-podcast {
+.post-type-archive-podcast .single-podcast {
     padding-bottom: 1em;
 }
 
-/* .page-podcasts .wp-block-audio {
+/* .post-type-archive-podcast .wp-block-audio {
     display: flex;
 } */
 
@@ -508,7 +508,7 @@ audio {
 }
 
 
-.page-podcasts .podcast-date {
+.post-type-archive-podcast .podcast-date {
     background-color: black;
     color: white;
     border-radius: 15px;
@@ -516,7 +516,7 @@ audio {
     margin-left: 2em;
 }
 
-.page-podcasts p {
+.post-type-archive-podcast p {
     margin-left: 1em;
     margin-top: .2em;
     margin-bottom: .5em;
@@ -747,11 +747,11 @@ footer .bottom-el {
         padding-bottom: 1em;
     }
 
-    .page-podcasts .podcasts-container {
+    .post-type-archive-podcast .podcasts-container {
         width: 100%;
     }
 
-    .page-podcasts .content {
+    .post-type-archive-podcast .content {
         padding-left: 10px;
         padding-right: 10px;
     }

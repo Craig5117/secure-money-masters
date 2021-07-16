@@ -10,9 +10,14 @@ get_header();
 <main class="content">
     <div class="podcasts-container">
 <?php 
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $podcastPosts = new WP_Query(array(
             'posts_per_page' => 10,
-            'post_type' => 'podcast'
+            'post_type' => 'podcast',
+            'meta_key' => 'broadcast_date',
+            'orderby' => 'meta_value_num',
+            'order' => 'DESC',
+            'paged' => $paged,
         ));
         while ($podcastPosts->have_posts()) {
             $podcastPosts->the_post(); ?>
@@ -24,13 +29,13 @@ get_header();
                     echo $eventDate->format('F j, Y');?>
                 </span>              
               </div>
-            <?php } wp_reset_postdata();
+            <?php } 
            ?>
            <div class="pagination-container"><?php echo paginate_links(); ?></div>
     </div>
 </main>
     
 <?php 
-
+wp_reset_postdata();
 get_footer();
 ?>

@@ -2,7 +2,6 @@
 
 get_header(); ?>
 
-
     <div class="page-title-container">
       <h2 class="page-title">Our Blog</h2>
     </div>  

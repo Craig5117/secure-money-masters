@@ -2,9 +2,8 @@
 
 get_header(); ?>
 
-
     <div class="page-title-container">
-      <h2 class="page-title">Our Blog</h2>
+      <h2 class="page-title"><?php the_archive_title();?></h2>
     </div>  
   
     
