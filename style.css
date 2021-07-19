@@ -570,7 +570,38 @@ footer .bottom-el {
     padding: 1em;
 }
 
+/** 
+* 404 Styles */
 
+.error-message-container {
+    /* border: solid 3px var(--main-theme); */
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 70%;
+    box-shadow: 5px 0 10px -5px black, 0 5px 10px -5px black, -5px 0 10px -5px black;
+    border-top: solid 30px var(--main-theme);
+    border-left: solid 3px var(--main-theme);
+    border-right: solid 3px var(--main-theme);
+    border-bottom: solid 15px var(--main-theme);
+}
+
+.error404 .error-heading {
+    border-bottom: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    font-size: 4em;
+}
+
+.error404 .error-text {
+    background-color: var(--main-light);
+    padding: 1em 0 .1em 3em;
+    margin-bottom: 1.5em;
+    border: solid 3px black;
+    border-radius: 5px;
+}
 
 @media screen and (max-width: 1024px) {
     .header-container {
@@ -630,6 +661,14 @@ footer .bottom-el {
 
     .single table {
         padding-left: 2.5em;
+    }
+
+    .error-message-container {
+        width: 100%;
+    }
+
+    .error404 .error-text {
+        padding: 1em 1em .1em 1em;
     }
 }
 
