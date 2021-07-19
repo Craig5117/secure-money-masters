@@ -6,8 +6,9 @@ get_header(); ?>
       <h2 class="page-title">Our Blog</h2>
     </div>  
   
-    
+
     <main class="content">
+
     
     <?php 
 

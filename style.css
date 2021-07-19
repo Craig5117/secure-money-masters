@@ -469,12 +469,12 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     padding-left: .5em;
 }
 
-.post-type-archive-podcast .content {
+.post-type-archive-podcast .content, .single-podcast .content {
     display: flex;
     justify-content: center;
 }
 
-.post-type-archive-podcast .podcasts-container {
+.post-type-archive-podcast .podcasts-container, .single-podcast .podcasts-container {
     border-top: solid 30px var(--main-theme);
     border-left: solid 3px var(--main-theme);
     border-right: solid 3px var(--main-theme);
@@ -485,7 +485,7 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     box-shadow: 5px 0 10px -5px black, 0 5px 10px -5px black, -5px 0 10px -5px black;
 }
 
-.post-type-archive-podcast .content h3 {
+.post-type-archive-podcast .content h3, .single-podcast .content h3 {
     color: white;
     text-shadow: none;
     background-color: var(--main-light);
@@ -493,9 +493,16 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     width: 100%;
     margin: 0;
     font-size: 1.5em;
+    padding-bottom: 0;
 }
 
-.post-type-archive-podcast .single-podcast {
+.podcast-title a {
+    text-decoration: none;
+    width: 100%;
+    color: white;
+}
+
+.post-type-archive-podcast .podcast, .single-podcast .podcast {
     padding-bottom: 1em;
 }
 
@@ -508,7 +515,7 @@ audio {
 }
 
 
-.post-type-archive-podcast .podcast-date {
+.post-type-archive-podcast .podcast-date, .single-podcast .podcast-date {
     background-color: black;
     color: white;
     border-radius: 15px;
@@ -516,7 +523,7 @@ audio {
     margin-left: 2em;
 }
 
-.post-type-archive-podcast p {
+.podcast-description {
     margin-left: 1em;
     margin-top: .2em;
     margin-bottom: .5em;

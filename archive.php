@@ -6,6 +6,7 @@ get_header(); ?>
       <h2 class="page-title"><?php the_archive_title();?></h2>
     </div>  
   
+ 
     
     <main class="content">
     

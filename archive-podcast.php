@@ -21,8 +21,8 @@ get_header();
         ));
         while ($podcastPosts->have_posts()) {
             $podcastPosts->the_post(); ?>
-            <div class="single-podcast">
-                  <h3 class=""><?php the_title();?></h3>
+            <div class="podcast">
+                  <h3 class="podcast-title"><a href="<?php echo get_the_permalink() ?>"><?php the_title();?></a></h3>
                   <div><?php the_content(); ?></div>    
                   <span class="podcast-date"><?php 
                     $eventDate = new DateTime(get_field('broadcast_date'));
