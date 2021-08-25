@@ -48,6 +48,3 @@
                 </nav>              
             </div>
         </header>
-
-     
-   
