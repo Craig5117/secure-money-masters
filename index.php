@@ -5,7 +5,7 @@ get_header(); ?>
     <div class="page-title-container">
       <h2 class="page-title">Our Blog</h2>
     </div>  
-  
+    <p class="broker-check-bubble">Check the background of your financial professional on FINRA's <a style="color: black" href="https://brokercheck.finra.org/" target="_blank" rel="noreferrer noopener">BrokerCheck</a><p> 
 
     <main class="content">
 
