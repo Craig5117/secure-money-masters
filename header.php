@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html <?php language_attributes() ?>>
     <head>
-        <meta charset="<?php bloginfo('charset') ?>">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="<?php bloginfo('charset') ?>" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="A landing site for clients and potential new contacts for SecureMoneyMasters, a financial advising firm." />
+        <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51612959078_5d7e7f8965_k.jpg"/>
+        <meta name="author" content="Craig Bennett" />
         <?php wp_head(); ?>
     </head>
     <body <?php body_class()?>>
